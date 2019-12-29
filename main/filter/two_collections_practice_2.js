@@ -1,8 +1,11 @@
 'use strict';
 
 function choose_no_common_elements(collection_a, collection_b) {
-
-  //在这里写入代码
+  var totalArr = collection_b.concat(collection_a);
+  var res = totalArr.filter(function (value, index, array) {
+    return array.indexOf(value) === index;
+  });
+  return res;
 }
 
 module.exports = choose_no_common_elements;

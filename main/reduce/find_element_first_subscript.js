@@ -1,7 +1,14 @@
 'use strict';
 
 function calculate_elements_sum(collection, element) {
-  //在这里写入代码
+  var item = 0;
+  while(item < collection.length) {
+    if (collection[item] === element) {
+      return item;
+    } else {
+      item++;
+    }
+  }
 }
 
 module.exports = calculate_elements_sum;

@@ -1,6 +1,6 @@
 function count_same_elements(collection) {
   var results = [];
-  collection.filter(function (value, index, array) {
+  collection.filter(function (value) {
     var item = checkItem(results, value);
     if (item !== "") {
       results[item].count++;

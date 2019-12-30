@@ -1,8 +1,8 @@
 'use strict';
 
 function amount_even(collection) {
-
-  //在这里写入代码
+  var res = collection.filter((item) => item % 2 === 0);
+  return res.reduce((pre, cur) => pre + cur);
 }
 
 module.exports = amount_even;

@@ -9,7 +9,7 @@ function create_updated_collection(collection_a, object_b) {
 
 function checkItem(arr, element) {
   for(var item = 0; item < arr.length; item++) {
-    if(arr[item].key === element) {
+    if (arr[item].key === element) {
       return item;
     }
   }

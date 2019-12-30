@@ -1,7 +1,8 @@
 'use strict';
 
 function collect_min_number(collection) {
-  //在这里写入代码
+  var res = collection.reduce((pre, cur) => pre > cur ? cur : pre);
+  return res;
 }
 
 module.exports = collect_min_number;

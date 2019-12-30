@@ -26,7 +26,7 @@ function count_same_elements(collection) {
 
 function checkItem(arr, element) {
   for(var item = 0; item < arr.length; item++) {
-    if(arr[item].key === element) {
+    if (arr[item].key === element) {
       return item;
     }
   }

@@ -1,8 +1,15 @@
 'use strict';
 
 function find_first_even(collection) {
-  //在这里写入代码
+  var item = 0;
+  while(item < collection.length) {
+    if (collection[item] % 2) {
+      item++;
+    } else {
+      return collection[item];
+    }
+  }
+  return null;
 }
 
 module.exports = find_first_even;
-

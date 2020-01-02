@@ -3,7 +3,7 @@ function collect_same_elements(collection_a, collection_b) {
   var res = totalArr.filter(function (value, index, array) {
     return array.indexOf(value) !== index;
   }, collection_b.length);
-  return res;
+  return res; //TODO: res可与inline
 }
 
 module.exports = collect_same_elements;

@@ -2,7 +2,7 @@
 
 function even_to_letter(collection) {
   var res = collection.filter((item) => item % 2 === 0);
-  return res.map((item) => item = generateString(item));
+  return res.map((item) => item = generateString(item)); //TODO: 为什么要给item赋值？
 }
 
 function generateString(index) {
@@ -18,4 +18,3 @@ function generateString(index) {
 }
 
 module.exports = even_to_letter;
- 

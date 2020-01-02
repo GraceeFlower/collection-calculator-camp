@@ -1,9 +1,9 @@
 'use strict';
 
 function choose_no_common_elements(collection_a, collection_b) {
-  var res = collection_a.filter((value) => 
+  var res = collection_a.filter((value) =>
     !collection_b.includes(value));
-  return res;
+  return res; //TODO: res可与inline
 }
 
 module.exports = choose_no_common_elements;

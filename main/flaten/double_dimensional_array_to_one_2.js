@@ -6,4 +6,4 @@ function double_to_one(collection) {
 }
 
 module.exports = double_to_one;
-double_to_one([[1,2,3],[5,2,1,4], [2,1]]);
+double_to_one([[1,2,3],[5,2,1,4], [2,1]]); //TODO: 这个是？？？

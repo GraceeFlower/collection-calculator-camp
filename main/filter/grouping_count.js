@@ -8,7 +8,7 @@ function grouping_count(collection) {
     } else {
       res[value] = 1;
     }
-  })
+  }) //TODO: 分号呢？
   return res;
 }
 

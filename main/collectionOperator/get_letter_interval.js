@@ -5,7 +5,7 @@ function get_letter_interval(number_a, number_b) {
   if (number_a < number_b) {
     for(var item = number_a; item <= number_b; item++) {
       res.push(generateString(item));
-    } 
+    }
   } else if (number_a > number_b) {
     for(var item = number_a; item >= number_b; item--) {
       res.push(generateString(item));
@@ -16,6 +16,7 @@ function get_letter_interval(number_a, number_b) {
   return res;
 }
 
+//TODO: 抽方法很好！
 function generateString(item) {
   return String.fromCharCode(96 + item);
 }

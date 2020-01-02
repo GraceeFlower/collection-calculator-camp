@@ -5,7 +5,7 @@ function get_letter_interval_2(number_a, number_b) {
   if (number_a < number_b) {
     for(var item = number_a; item <= number_b; item++) {
       res.push(generateString(item));
-    } 
+    }
   } else if (number_a > number_b) {
     for(var item = number_a; item >= number_b; item--) {
       res.push(generateString(item));
@@ -21,6 +21,7 @@ function generateString(index) {
   var basic = 96 + index;
   var former = 96 + excess;
   var latter = 96 + index - excess * 26;
+  //TODO: 这里可以写三元表达式，当然if-else也可以！
   if (!excess) {
     return String.fromCharCode(basic);
   } else {

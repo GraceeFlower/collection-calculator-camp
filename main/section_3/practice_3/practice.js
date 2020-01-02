@@ -20,7 +20,7 @@ function count_same_elements(collection) {
       result.count = 1;
       results.push(result);
     }
-  })
+  }) //TODO: 分号呢？
   return results;
 }
 
@@ -30,7 +30,7 @@ function checkItem(arr, element) {
       return item;
     }
   }
-  return ""; 
+  return "";
 }
 
 module.exports = create_updated_collection;

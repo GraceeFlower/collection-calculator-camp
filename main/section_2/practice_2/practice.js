@@ -5,7 +5,7 @@ function count_same_elements(collection) {
     var key = value.match(/\d/) ? value.slice(0, 1) : value;
     var item = checkItem(results, value);
     if (item !== "") {
-      results[item].count++;
+      results[item].count += num;
     } else {
       var result = {};
       result.key = key;

@@ -1,7 +1,7 @@
 'use strict';
 var even_group_calculate_average = function(collection){
   var res = collection.filter((value, index) => value % 2 === 0 && index % 2 !== 0);
-  if (!res.length) {return [0]}
+  if (res.length === 0) {return [0]}
   var subArr = [];
   res.forEach((item) => generateSubArr(subArr, item));
   var average = subArr.map(function (item) {

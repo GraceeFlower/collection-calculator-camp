@@ -15,7 +15,9 @@ function get_integer_interval_2(number_a, number_b) {
       item -= 2;
     }
   } else {
-    number_a % 2 ? [] : res.push(number_a);
+    if (!(number_a % 2)) {
+      res.push(number_a);
+    }
   }
   return res;
 }

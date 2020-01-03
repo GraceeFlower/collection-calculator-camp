@@ -26,4 +26,3 @@ function generateString(index) {
 }
 
 module.exports = get_letter_interval_2;
-

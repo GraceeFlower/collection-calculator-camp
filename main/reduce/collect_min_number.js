@@ -1,9 +1,7 @@
 'use strict';
 
 function collect_min_number(collection) {
-  var res = collection.reduce((pre, cur) => pre > cur ? cur : pre);
-  return res;
+  return collection.reduce((pre, cur) => pre > cur ? cur : pre);
 }
 
 module.exports = collect_min_number;
-

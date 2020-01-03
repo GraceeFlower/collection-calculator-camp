@@ -12,7 +12,7 @@ function count_same_elements(collection) {
       result.summary = num;
       results.push(result);
     }
-  })
+  });
   return results;
 }
 

@@ -1,6 +1,6 @@
 function count_same_elements(collection) {
   var results = [];
-  collection.filter(function (value) {
+  collection.forEach(function (value) {
     var num = value.match(/\d/) ? parseInt(value.slice(-1)) : 1;
     var key = value.match(/\d/) ? value.slice(0, 1) : value;
     var item = checkItem(results, value);

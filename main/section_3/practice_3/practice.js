@@ -10,7 +10,7 @@ function create_updated_collection(collection_a, object_b) {
 
 function count_same_elements(collection) {
   var results = [];
-  collection.filter(function (value) {
+  collection.forEach(function (value) {
     var item = checkItem(results, value);
     if (item !== "") {
       results[item].count++;
